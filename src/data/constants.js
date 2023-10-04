@@ -2,10 +2,12 @@ export const Bio = {
   name: "Ayush Verma",
   roles: "Software Developer",
   description:
-    "I have 2+ years of experience. Experienced in developing scalable and secure Microservices using C# in ASP.NET Core Web API. Skilled in JavaScript and ReactJS for building responsive Front-end. Excellent analytical, problem-solving skills and commited to delivering high-quality code with a track record of meeting and exceeding project goals. Passion for learning new technologies to improve technical skill set. Always eager to take on new challenges with a positive attitude and a growth mindset.",
+    "I have 2+ years of experience. Experienced in developing scalable and secure Microservices using C# in ASP.NET Core Web API. Skilled in JavaScript and React JS for building responsive Front-end. Excellent analytical, problem-solving skills and commited to delivering high-quality code with a track record of meeting and exceeding project goals. Passion for learning new technologies to improve technical skill set. Always eager to take on new challenges with a positive attitude and a growth mindset.",
   github: "https://github.com/Ayush1099",
   resume: "https://drive.google.com/file/d/1Cfvr6fqGU1poEeJmeHXRHBAbcNRngY2A/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/ayush-verma-110283190/",
+  emailId: "ayush99verma@gmail.com",
+  phone: "7972352688 / 9421801348"
 };
 
 export const skills = [
@@ -13,7 +15,7 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
-        name: "React Js",
+        name: "React JS",
         image:"https://cdn.worldvectorlogo.com/logos/react-2.svg",
       },
       {
@@ -42,11 +44,11 @@ export const skills = [
         image: "https://cdn.worldvectorlogo.com/logos/c.svg"
       },
       {
-        name: "Node Js",
+        name: "Node JS",
         image: "https://nodejs.org/static/images/logo.svg",
       },
       {
-        name: "Express Js",
+        name: "Express JS",
         image:"https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
       },
       {
@@ -58,7 +60,7 @@ export const skills = [
         image: "https://cdn-icons-png.flaticon.com/512/10195/10195226.png?ga=GA1.1.238019527.1696140306"
       },
       {
-        name: "Asp.Net Core",
+        name: "ASP.NET Core",
         image: "https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg",
       },
     ],
@@ -96,28 +98,28 @@ export const experiences = [
     img: "https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg",
     role: "System Engineer",
     company: "Infosys Ltd.",
-    date: "May 2022 - Present",
-    desc: "Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings. Developed scalable and secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern. Unit tested Microservices using XUnit, achieving code coverage above 80%. Created responsive user interfaces using ReactJS for SPA development. Integrated Swagger for API documentation, testing, analyzing and debugging/troubleshooting functional and technical issues. Implemented JWT mechanism for authentication and authorization. Consulted with QA engineers to test specific work items and resolve bugs. Mentored team members on assigned tasks and provided constructive feedback resulting in increased team productivity.",
-    skills: ["C#","Asp.Net Core Web API",".Net Framework","Microservices","Unit Testing (XUnit)","React JS"],
-    doc: "",
-  },
-  {
-    id: 0,
-    img: "https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg",
-    role: "System Engineer Trainee",
-    company: "Infosys Ltd",
-    date: "17th February 2022 – 28th April 2022",
-    desc: "Received training in C# Programming Language and MS SQL. Developed Data Access Layer using Entity Framework Core and Web Service Layer using ASP.NET Core Web API for API Development.",
-    skills: ["Java","C#","Asp.Net Core Web API","MySQL","MSSQL"],
+    date: "1st May 2022 - Present",
+    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable and secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.","Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation, testing and debugging/troubleshooting functional and technical issues.", "Implemented JWT mechanism for authentication and authorization.", "Consulted with QA engineers to test specific work items and resolve bugs.", "Mentored team members on assigned tasks and provided constructive feedback resulting in increased team productivity."],
+    skills: ["C#","ASP.NET Core Web API",".NET Framework","Microservices","CQRS","Unit Testing (XUnit)","React JS"],
     doc: "",
   },
   {
     id: 1,
+    img: "https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg",
+    role: "System Engineer Trainee",
+    company: "Infosys Ltd",
+    date: "17th February 2022 – 28th April 2022",
+    desc: ["Received training in Java, C#, MySQL and MSSQL.","Developed Data Access Layer using Entity Framework Core and Web Service Layer using ASP.NET Core Web API for API Development."],
+    skills: ["Java","C#","ASP.NET Core Web API","MySQL","MSSQL"],
+    doc: "",
+  },
+  {
+    id: 2,
     img: "https://ritgoa.ac.in/wp-content/uploads/2021/06/Anant-Infomedia-Pvt.-Ltd..jpg",
-    role: "Fullstack Externship",
+    role: "Software Support Executive",
     company: "Anant Infomedia Pvt Ltd",
-    date: "October 2021 - February 2022",
-    desc: "Contributed to coding, application testing and debugging websites for various projects. Implemented new features from scratch by modifying frontend and backend web pages. Utilized technologies and frameworks such as HTML, CSS, JavaScript, PHP, Angular, CodeIgniter and SQL Server.",
+    date: "4th October 2021 - 12th February 2022",
+    desc: ["Contributed to coding, application testing and debugging websites for various projects.","Implemented new features from scratch by modifying frontend and backend web pages."],
     skills: ["HTML","CSS","JavaScript","PHP","Angular","CodeIgniter","SQL Server",],
     doc: "",
   },
@@ -145,7 +147,7 @@ export const education = [
     img: "https://www.vidyavikasacademy.edu.in/new/wp-content/uploads/2021/06/logopage-235x300.png",
     school: "Vidya Vikas Academy - Goa",
     date: "2015",
-    grade: "72.8%",
+    grade: "8.8 CGPA",
     degree: "Senior Secondary (10th)",
   },
 ];
