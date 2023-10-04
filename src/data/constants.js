@@ -7,7 +7,9 @@ export const Bio = {
   resume: "https://drive.google.com/file/d/1Cfvr6fqGU1poEeJmeHXRHBAbcNRngY2A/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/ayush-verma-110283190/",
   emailId: "ayush99verma@gmail.com",
-  phone: "7972352688 / 9421801348"
+  phone: "7972352688 / 9421801348",
+  country: ", India",
+  state: "Goa"
 };
 
 export const skills = [
@@ -133,6 +135,7 @@ export const education = [
     degree: "Bachelor’s Degree in Mechanical Engineering",
     date: "2017-2021",
     grade: "70.6%",
+    doc: "",
   },
   {
     id: 1,
@@ -141,6 +144,7 @@ export const education = [
     date: "2015-2017",
     grade: "72.8%",
     degree: "Higher Secondary (12th)",
+    doc: "https://drive.google.com/file/d/1ZHnmcuAuJLUE2G-ar5AOt6gTADM2v2W1/view?usp=sharing",
   },
   {
     id: 2,
@@ -149,6 +153,7 @@ export const education = [
     date: "2015",
     grade: "8.8 CGPA",
     degree: "Senior Secondary (10th)",
+    doc: "https://drive.google.com/file/d/1lAMjrodvFEo_gJI3j3YK6p14-8tW8Izl/view?usp=sharing",
   },
 ];
 

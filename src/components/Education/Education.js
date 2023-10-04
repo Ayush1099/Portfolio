@@ -6,10 +6,10 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education, experiences } from '../../data/constants';
-import EducationCard from '../Cards/EducationCard';
+import EducationCard from '../Cards/Education/EducationCard';
 import {Container, Wrapper, Title, TimelineSection, } from './EducationStyle';
 
-const index = () => {
+const Education = () => {
     return (
         <Container id="education">
             <Wrapper>
@@ -34,4 +34,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Education

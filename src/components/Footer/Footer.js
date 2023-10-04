@@ -21,6 +21,9 @@ function Footer() {
         <SocialMediaIcons>
           <Phone/><SocialMediaIcon target="display">{Bio.phone}</SocialMediaIcon>
         </SocialMediaIcons>
+        <SocialMediaIcons>
+          <SocialMediaIcon target="display">{Bio.state}{Bio.country}</SocialMediaIcon>
+        </SocialMediaIcons>
         <Copyright>
           &copy; 2023 Ayush Verma. All rights reserved.
         </Copyright>

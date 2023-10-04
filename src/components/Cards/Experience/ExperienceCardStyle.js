@@ -1,7 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-const Document = styled.img`
+export const Document = styled.img`
     display: none;
     height: 70px;
     width: fit-content;
@@ -12,8 +11,7 @@ const Document = styled.img`
         opacity: 0.8;
     }
 `
-
-const Description = styled.div`
+export const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
@@ -23,20 +21,18 @@ const Description = styled.div`
         font-size: 12px;
     }
 `
-
-const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+export const Span = styled.span`
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 `
-
-const Card = styled.div`
+export const Card = styled.div`
     width: 650px;
     border-radius: 10px;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     padding: 12px 16px;
     justify-content: space-between;
     position: relative;
@@ -62,18 +58,16 @@ const Card = styled.div`
     &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
-    border: 0.1px solid #854CE6;
+    border: 0.1px solid #306EE8;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `
-
-const Top = styled.div`
+export const Top = styled.div`
     width: 100%;
     display: flex;
     gap: 12px
 `
-
-const Image = styled.img`
+export const Image = styled.img`
     height: 50px;
     background-color: #000;
     border-radius: 10px;
@@ -82,15 +76,12 @@ const Image = styled.img`
         height: 40px;
     }
 `
-
-const Body = styled.div`
+export const Body = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column; 
 `
-
-
-const Name = styled.div`
+export const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
     color: ${({ theme }) => theme.text_primary + 99};
@@ -98,8 +89,7 @@ const Name = styled.div`
         font-size: 14px;
     }
 `
-
-const Degree = styled.div`
+export const Company = styled.div`
     font-size: 14px;
     font-weight: 500;
     color: ${({ theme }) => theme.text_secondary + 99};
@@ -107,8 +97,7 @@ const Degree = styled.div`
         font-size: 12px;
     }
 `
-
-const Date = styled.div`
+export const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 80};
@@ -116,35 +105,22 @@ const Date = styled.div`
         font-size: 10px;
     }
 `
-
-const Grade = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+export const Skills = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: -10px;
+`
+export const ItemWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+`
+export const Skill = styled.div`
+    font-size: 15px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_primary + 99};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
-
-
-
-const EducationCard = ({ education }) => {
-    return (
-        <Card>
-            <Top>
-                <Image src={education.img} />
-                <Body>
-                    <Name>{education.school}</Name>
-                    <Degree>{education.degree}</Degree>
-                    <Date>{education.date}</Date>
-                </Body>
-            </Top>
-            <Grade><b>Grade: </b>{education.grade}</Grade>
-            <Description>
-                <Span>{education.desc}</Span>
-            </Description>
-        </Card>
-    )
-}
-
-export default EducationCard

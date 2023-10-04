@@ -5,7 +5,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import ExperienceCard from '../Cards/ExperienceCard';
+import ExperienceCard from '../Cards/Experience/ExperienceCard';
 import { experiences } from '../../data/constants';
 import{Container, Wrapper, Title, TimelineSection} from './ExperienceStyle'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Wrapper, Title, CardContainer } from './ProjectsStyle'
-import ProjectCard from '../Cards/ProjectCards'
+import ProjectCard from '../Cards/Project/ProjectCards'
 import { projects } from '../../data/constants'
 
 const Projects = ({openModal,setOpenModal}) => {
