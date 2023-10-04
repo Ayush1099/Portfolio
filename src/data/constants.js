@@ -2,7 +2,7 @@ export const Bio = {
   name: "Ayush Verma",
   roles: "Software Developer",
   description:
-    "I have 2+ years of experience. Experienced in developing scalable and secure Microservices using C# in ASP.NET Core Web API. Skilled in JavaScript and React JS for building responsive Front-end. Excellent analytical, problem-solving skills and commited to delivering high-quality code with a track record of meeting and exceeding project goals. Passion for learning new technologies to improve technical skill set. Always eager to take on new challenges with a positive attitude and a growth mindset.",
+    "I have 2+ years of experience. Experienced in developing scalable & secure Microservices using C# in ASP.NET Core Web API. Skilled in JavaScript & React JS for building responsive Front-end. Excellent analytical, problem-solving skills & commited to delivering high-quality code with a track record of meeting & exceeding project goals. Passion for learning new technologies to improve technical skill set. Always eager to take on new challenges with a positive attitude & a growth mindset.",
   github: "https://github.com/Ayush1099",
   resume: "https://drive.google.com/file/d/1Cfvr6fqGU1poEeJmeHXRHBAbcNRngY2A/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/ayush-verma-110283190/",
@@ -99,7 +99,7 @@ export const experiences = [
     role: "System Engineer",
     company: "Infosys Ltd.",
     date: "1st May 2022 - Present",
-    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable and secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.","Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation, testing and debugging/troubleshooting functional and technical issues.", "Implemented JWT mechanism for authentication and authorization.", "Consulted with QA engineers to test specific work items and resolve bugs.", "Mentored team members on assigned tasks and provided constructive feedback resulting in increased team productivity."],
+    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable & secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.","Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation, testing & debugging/troubleshooting functional & technical issues.", "Implemented JWT mechanism for authentication & authorization.", "Consulted with QA engineers to test specific work items & resolve bugs.", "Mentored team members on assigned tasks & provided constructive feedback resulting in increased team productivity."],
     skills: ["C#","ASP.NET Core Web API",".NET Framework","Microservices","CQRS","Unit Testing (XUnit)","React JS"],
     doc: "",
   },
@@ -109,7 +109,7 @@ export const experiences = [
     role: "System Engineer Trainee",
     company: "Infosys Ltd",
     date: "17th February 2022 – 28th April 2022",
-    desc: ["Received training in Java, C#, MySQL and MSSQL.","Developed Data Access Layer using Entity Framework Core and Web Service Layer using ASP.NET Core Web API for API Development."],
+    desc: ["Received training in Java, C#, MySQL & MSSQL.","Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
     skills: ["Java","C#","ASP.NET Core Web API","MySQL","MSSQL"],
     doc: "",
   },
@@ -119,7 +119,7 @@ export const experiences = [
     role: "Software Support Executive",
     company: "Anant Infomedia Pvt Ltd",
     date: "4th October 2021 - 12th February 2022",
-    desc: ["Contributed to coding, application testing and debugging websites for various projects.","Implemented new features from scratch by modifying frontend and backend web pages."],
+    desc: ["Contributed to coding, testing & debugging websites of various projects.","Developed new features from scratch by modifying frontend & backend web pages."],
     skills: ["HTML","CSS","JavaScript","PHP","Angular","CodeIgniter","SQL Server",],
     doc: "",
   },
@@ -158,7 +158,7 @@ export const projects = [
     title: "Trackify",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "Trackify is a web application designed to streamline task management & enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities & empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
     image:
       "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
     tags: [
