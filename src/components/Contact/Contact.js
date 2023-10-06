@@ -39,6 +39,7 @@ const Contact = () => {
       .then((result) => {
         console.log(result.text);
         setOpen(true);
+        e.target.reset();
       })
       .catch((error) => {
         console.error(error.text);
