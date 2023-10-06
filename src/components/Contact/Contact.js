@@ -37,7 +37,6 @@ const Contact = () => {
 
     emailjs.sendForm(emailService, templateId, e.target, userId)
       .then((result) => {
-        console.log(result.text);
         setOpen(true);
         e.target.reset();
       })
