@@ -97,23 +97,21 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg",
+    img: "https://cdn-ukwest.onetrust.com/logos/8d84415b-1b52-4bc4-8d5f-ca9a8eccaf8a/f7db8968-fc22-4620-92ac-dc05c5d2aa15/02460a41-565e-4cac-80a7-449bc8f77a72/logo-infosys.png",
     role: "System Engineer",
     company: "Infosys Ltd.",
     date: "1st May 2022 - Present",
-    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable & secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.","Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation, testing & debugging/troubleshooting functional & technical issues.", "Implemented JWT mechanism for authentication & authorization.", "Consulted with QA engineers to test specific work items & resolve bugs.", "Mentored team members on assigned tasks & provided constructive feedback resulting in increased team productivity."],
+    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable & secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.","Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation & testing.", "Implemented JWT mechanism for authentication & authorization.", "Consulted with QA engineers to test specific work items & resolve bugs.", "Mentored team members on assigned tasks & provided constructive feedback resulting in increased team productivity."],
     skills: ["C#","ASP.NET Core Web API",".NET Framework","Microservices","CQRS","Unit Testing (XUnit)","React JS"],
-    doc: "",
   },
   {
     id: 1,
-    img: "https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg",
+    img: "https://cdn-ukwest.onetrust.com/logos/8d84415b-1b52-4bc4-8d5f-ca9a8eccaf8a/f7db8968-fc22-4620-92ac-dc05c5d2aa15/02460a41-565e-4cac-80a7-449bc8f77a72/logo-infosys.png",
     role: "System Engineer Trainee",
     company: "Infosys Ltd",
     date: "17th February 2022 – 28th April 2022",
     desc: ["Received training in Java, C#, MySQL & MSSQL.","Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
     skills: ["Java","C#","ASP.NET Core Web API","MySQL","MSSQL"],
-    doc: "",
   },
   {
     id: 2,
@@ -123,7 +121,6 @@ export const experiences = [
     date: "4th October 2021 - 12th February 2022",
     desc: ["Contributed to coding, testing & debugging websites of various projects.","Developed new features from scratch by modifying frontend & backend web pages."],
     skills: ["HTML","CSS","JavaScript","PHP","Angular","CodeIgniter","SQL Server",],
-    doc: "",
   },
 ];
 
@@ -135,16 +132,14 @@ export const education = [
     degree: "Bachelor’s Degree in Mechanical Engineering",
     date: "2017-2021",
     grade: "70.6%",
-    doc: "",
   },
   {
     id: 1,
     img: "https://www.vidyavikasacademy.edu.in/new/wp-content/uploads/2021/06/logopage-235x300.png",
     school: "Vidya Vikas Academy - Goa",
-    date: "2015-2017",
+    date: "2017",
     grade: "72.8%",
     degree: "Higher Secondary (12th)",
-    doc: "https://drive.google.com/file/d/1ZHnmcuAuJLUE2G-ar5AOt6gTADM2v2W1/view?usp=sharing",
   },
   {
     id: 2,
@@ -153,7 +148,6 @@ export const education = [
     date: "2015",
     grade: "8.8 CGPA",
     degree: "Senior Secondary (10th)",
-    doc: "https://drive.google.com/file/d/1lAMjrodvFEo_gJI3j3YK6p14-8tW8Izl/view?usp=sharing",
   },
 ];
 

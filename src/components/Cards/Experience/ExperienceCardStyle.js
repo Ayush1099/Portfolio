@@ -1,16 +1,5 @@
 import styled from 'styled-components';
 
-export const Document = styled.img`
-    display: none;
-    height: 70px;
-    width: fit-content;
-    background-color: #000;
-    border-radius: 10px;
-    &:hover{
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`
 export const Description = styled.div`
     width: 100%;
     font-size: 15px;
@@ -49,10 +38,6 @@ export const Card = styled.div`
         padding: 10px;
         gap: 8px;
         width: 300px;
-    }
-
-    &:hover ${Document}{
-        display: flex;
     }
 
     &:hover ${Span}{

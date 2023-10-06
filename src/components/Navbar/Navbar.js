@@ -4,13 +4,11 @@ import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, SocialButton, B
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { useTheme } from 'styled-components';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHub from '@mui/icons-material/GitHub';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme()
   return (
     <Nav>
       <NavbarContainer>
@@ -53,8 +51,8 @@ const Navbar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <SocialButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank"><GitHub/></SocialButton>
-            <SocialButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.linkedin} target="_blank"><LinkedInIcon/></SocialButton>
+            <SocialButton style={{padding: '10px 16px', color: 'white',width: 'max-content'}} href={Bio.github} target="_blank"><GitHub/></SocialButton>
+            <SocialButton style={{padding: '10px 16px', color: 'white',width: 'max-content'}} href={Bio.linkedin} target="_blank"><LinkedInIcon/></SocialButton>
           </MobileMenu>
         }
       </NavbarContainer>
