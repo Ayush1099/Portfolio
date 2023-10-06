@@ -36,13 +36,11 @@ const Contact = () => {
     const userId = 'Aqyq3-CnefSh0v1xh';
 
     emailjs.sendForm(emailService, templateId, e.target, userId)
-      .then((result) => {
-        setOpen(true);
-        e.target.reset();
-      })
-      .catch((error) => {
-        console.error(error.text);
-      });
+    setOpen(true);
+    setFromEmail('');
+    setFromName('');
+    setMessage('');
+    setSubject('');
   };
 
   return (
