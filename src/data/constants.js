@@ -155,15 +155,15 @@ export const projects = [
   {
     id: 0,
     title: "News App",
-    description:["This is a News Application which shows Daily news of various categories","Developed Using Function based component"],
+    description:["This is a News Application which shows Daily news of various categories. Developed Using Function based component"],
     tags: ["JavaScript", "React JS", "HTML", "CSS", "Style-Components","GitHub"],
     github: "https://github.com/Ayush1099/NewsApp",
   },
   {
-    id: 0,
+    id: 1,
     title: "APIs",
-    description:["This is a Backend Application consisting of two APIs of type GET and POST method to create and fetch User Details from DB.","Implemented JWT mechanism for Authentication and Authorization.","Integrated Swagger for API Documentation and Testing.","Implemented validations for Request parameters."],
-    tags: ["JavaScript", "Node JS", "Express JS", "MongoDB","Postman","GitHub"],
+    description:["This is a Backend Application consisting of two APIs of type GET and POST method to create and fetch User Details from DB. Implemented JWT mechanism for Authentication and Authorization. Integrated Swagger for API Documentation and Testing. Implemented validations for Request parameters."],
+    tags: ["JavaScript", "Node JS", "Express JS", "MongoDB","Postman", "Swagger", "GitHub"],
     github: "https://github.com/Ayush1099/APIs",
   },
 ];

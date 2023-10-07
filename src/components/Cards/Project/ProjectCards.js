@@ -1,7 +1,7 @@
 import React from 'react'
-import { Card, Tags, Tag, Details, Title, Desc, ButtonGroup, Button } from "./ProjectCardStyle";
+import { Card, Tags, Tag, Details, Title, Desc, Button } from "./ProjectCardStyle";
 
-const ProjectCards = ({ project, setOpenModal }) => {
+const ProjectCards = ({ project }) => {
     return (
         <Card>
             <Details>
@@ -12,10 +12,8 @@ const ProjectCards = ({ project, setOpenModal }) => {
                     <Tag>{tag}</Tag>
                 ))}
             </Tags>
-            <Desc>{project?.description.map((desc) => (<p>• {desc}</p>))}</Desc>
-            <ButtonGroup>
-                <Button dull href={project?.github} target='new'>View Code</Button>
-            </ButtonGroup>
+            <Desc>{project?.description}</Desc>
+            <Button dull href={project?.github} target='new'>View Code</Button>
         </Card>
     )
 }

@@ -32,12 +32,20 @@ export const ButtonGroup = styled.div`
     margin: 12px 0px;
     gap: 12px;
 `;
+export const Span = styled.span`
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+`
 export const Card = styled.div`
     width: 370px;
     height: 350px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 10px;
+    padding: 12px 16px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
@@ -50,8 +58,13 @@ export const Card = styled.div`
     }
     @media only screen and (max-width: 768px){
         padding: 10px;
-        gap: 8px;
+	gap: 8px;
         width: 300px;
+        
+    }
+    &:hover ${Span}{
+        overflow: visible;
+        -webkit-line-clamp: unset;
     }
     border: 0.1px solid #306EE8;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -98,9 +111,6 @@ export const Desc = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
