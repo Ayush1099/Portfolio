@@ -26,12 +26,6 @@ export const Button = styled.a`
         font-size: 12px;
     }
 `;
-export const ButtonGroup = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    margin: 12px 0px;
-    gap: 12px;
-`;
 export const Span = styled.span`
     overflow: hidden;
     display: -webkit-box;
