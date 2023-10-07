@@ -1,12 +1,10 @@
 import React from 'react'
-import { Card, Tags, Tag, Details, Title, Desc, Button } from "./ProjectCardStyle";
+import { Card, Tags, Tag, Title, Desc, Button } from "./ProjectCardStyle";
 
 const ProjectCards = ({ project }) => {
     return (
         <Card>
-            <Details>
-                <Title>{project.title}</Title>
-            </Details>
+            <Title>{project.title}</Title>
             <Tags>
                 {project.tags?.map((tag, index) => (
                     <Tag>{tag}</Tag>
