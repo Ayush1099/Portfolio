@@ -153,28 +153,17 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
-    description:
-      "Trackify is a web application designed to streamline task management & enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities & empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-    tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-    ],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify.duckdns.org",
+    id: 0,
+    title: "News App",
+    description:["This is a News Application which shows Daily news of various categories","Developed Using Function based component"],
+    tags: ["JavaScript", "React JS", "HTML", "CSS", "Style-Components","GitHub"],
+    github: "https://github.com/Ayush1099/NewsApp",
+  },
+  {
+    id: 0,
+    title: "APIs",
+    description:["This is a Backend Application consisting of two APIs of type GET and POST method to create and fetch User Details from DB.","Implemented JWT mechanism for Authentication and Authorization.","Integrated Swagger for API Documentation and Testing.","Implemented validations for Request parameters."],
+    tags: ["JavaScript", "Node JS", "Express JS", "MongoDB","Postman","GitHub"],
+    github: "https://github.com/Ayush1099/APIs",
   },
 ];

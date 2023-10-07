@@ -11,7 +11,6 @@ import Contact from "./components/Contact/Contact.js";
 import Footer from "./components/Footer/Footer.js";
 import Experience from "./components/Experience/Experience.js";
 import Education from "./components/Education/Education.js";
-import ProjectDetails from "./components/ProjectDetails/ProjectDetails.jsx";
 
 function App() {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
@@ -32,9 +31,6 @@ function App() {
             <Contact />
           </Wrapper>
           <Footer />
-          {openModal.state &&
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
         </Body>
       </Router>
     </ThemeProvider>

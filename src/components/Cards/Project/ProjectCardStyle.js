@@ -1,30 +1,60 @@
 import styled from 'styled-components'
 
-export const Card = styled.div`
-    width: 330px;
-    height: 490px;
-    background-color: ${({ theme }) => theme.card};
+export const Button = styled.a`
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_primary};
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.primary};
+    ${({ dull, theme }) => dull && `
+        background-color: ${theme.bgLight};
+        color: ${theme.text_secondary};
+        &:hover {
+            background-color: ${({ theme }) => theme.bg + 99};
+        }
+    `}
     cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: ${({ theme }) => theme.primary + 99};
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+`;
+export const ButtonGroup = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0px;
+    gap: 12px;
+`;
+export const Card = styled.div`
+    width: 370px;
+    height: 350px;
     border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
     overflow: hidden;
-    padding: 26px 20px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        transform: translateY(-5px);
     }
-`
-export const Image = styled.img`
-    width: 100%;
-    height: 180px;
-    background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    @media only screen and (max-width: 768px){
+        padding: 10px;
+        gap: 8px;
+        width: 300px;
+    }
+    border: 0.1px solid #306EE8;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 `
 export const Tags = styled.div`
     width: 100%;
@@ -50,6 +80,7 @@ export const Details = styled.div`
     padding: 0px 2px;
 `
 export const Title = styled.div`
+    text-align: center;
     font-size: 20px;
     font-weight: 600;
     color: ${({ theme }) => theme.text_secondary};
@@ -61,37 +92,16 @@ export const Title = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
 `
-export const Date = styled.div`
-    font-size: 12px;
-    margin-left: 2px;
+export const Desc = styled.div`
+    width: 100%;
+    font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
-export const Description = styled.div`
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    overflow: hidden;
-    margin-top: 8px;
-    display: -webkit-box;
-    max-width: 100%;
+    color: ${({ theme }) => theme.text_primary + 99};
+    margin-bottom: 10px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-`
-export const Members = styled.div`
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-`
-export const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
-`
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+`;
