@@ -98,7 +98,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.bgPrimary};
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -145,7 +145,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.bgPrimary};
   cursor: pointer;
 `;
 
@@ -170,10 +170,12 @@ export const ResumeButton = styled.a`
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
-    width: 95%;
-    max-width: 300px;
+    margin-right:10px;
+    margin-bottom:10px;
+    width: 50%;
+    max-width: 250px;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 20px;
     color:${({ theme }) => theme.white};
     border-radius: 20px;
     cursor: pointer;

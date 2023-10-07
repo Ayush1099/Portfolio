@@ -73,13 +73,13 @@ export const NavLink = styled.a`
 
 export const SocialButton = styled.a`
   margin-right:10px; 
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 1.8px solid ${({ theme }) => theme.bgPrimary};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
@@ -87,7 +87,7 @@ export const SocialButton = styled.a`
   font-size: 16px;
   transition: all 0.6s ease-in-out;
     :hover {
-      background: ${({ theme }) => theme.primary};
+      background: ${({ theme }) => theme.bgPrimary};
       color: ${({ theme }) => theme.white};     
     }
     @media screen and (max-width: 768px) { 
@@ -197,17 +197,5 @@ export const MobileLink = styled.a`
 
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
-`;
-
-export const MobileNavLogo = styled(LinkR)`
-  width: 80%;
-  padding: 0 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
-  @media (max-width: 640px) {
-    padding: 0 0px;
   }
 `;

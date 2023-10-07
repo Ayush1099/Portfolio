@@ -110,7 +110,7 @@ export const experiences = [
     role: "System Engineer Trainee",
     company: "Infosys Ltd",
     date: "17th February 2022 – 28th April 2022",
-    desc: ["Received training in Java, C#, MySQL & MSSQL.","Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
+    desc: ["Received training in Java, C#, .NET Core, MySQL & MSSQL.","Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
     skills: ["Java","C#","ASP.NET Core Web API","MySQL","MSSQL"],
   },
   {

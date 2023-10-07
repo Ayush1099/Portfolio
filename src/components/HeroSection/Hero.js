@@ -5,6 +5,9 @@ import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 
 const HeroSection = () => {
+    const handleHireMeClick = () => {
+      window.location.href = `mailto:${Bio.emailId}`;
+    };
     return (
         <div id="about">
             <HeroContainer>
@@ -25,6 +28,7 @@ const HeroSection = () => {
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
                         <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
+                        <ResumeButton onClick={handleHireMeClick} target='display'>Hire Me</ResumeButton>
                     </HeroLeftContainer>
                     <HeroRightContainer id="Right">
                         <Img src={HeroImg} alt="hero-image" />

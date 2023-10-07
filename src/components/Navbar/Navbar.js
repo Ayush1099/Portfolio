@@ -51,8 +51,8 @@ const Navbar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <SocialButton style={{padding: '10px 16px', color: 'white',width: 'max-content'}} href={Bio.github} target="_blank"><GitHub/></SocialButton>
-            <SocialButton style={{padding: '10px 16px', color: 'white',width: 'max-content'}} href={Bio.linkedin} target="_blank"><LinkedInIcon/></SocialButton>
+            <SocialButton style={{padding: '10px 16px', color: 'white', backgroundColor: '#854CE6', width: 'max-content'}} href={Bio.github} target="_blank"><GitHub/></SocialButton>
+            <SocialButton style={{padding: '10px 16px', color: 'white', backgroundColor: '#854CE6', width: 'max-content'}} href={Bio.linkedin} target="_blank"><LinkedInIcon/></SocialButton>
           </MobileMenu>
         }
       </NavbarContainer>
