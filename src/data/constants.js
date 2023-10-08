@@ -1,3 +1,6 @@
+import News from "../images/News.jpg"
+import APIs from "../images/APIs.png"
+
 export const Bio = {
   name: "Ayush Verma",
   roles: "Software Developer",
@@ -18,7 +21,7 @@ export const skills = [
     skills: [
       {
         name: "React JS",
-        image:"https://cdn.worldvectorlogo.com/logos/react-2.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
       },
       {
         name: "HTML",
@@ -26,11 +29,11 @@ export const skills = [
       },
       {
         name: "CSS",
-        image:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
       {
         name: "JavaScript",
-        image:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
     ],
   },
@@ -51,11 +54,11 @@ export const skills = [
       },
       {
         name: "Express JS",
-        image:"https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+        image: "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
       },
       {
         name: "MySQL",
-        image:"https://cdn.worldvectorlogo.com/logos/mysql-logo.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/mysql-logo.svg",
       },
       {
         name: "REST API",
@@ -72,23 +75,23 @@ export const skills = [
     skills: [
       {
         name: "GitHub",
-        image:"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+        image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
       {
         name: "Postman",
-        image:"https://cdn.worldvectorlogo.com/logos/postman.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/postman.svg",
       },
       {
         name: "VS Code",
-        image:"https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
       },
       {
         name: "Visual Studio",
-        image:"https://cdn.worldvectorlogo.com/logos/visual-studio-2013.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/visual-studio-2013.svg",
       },
       {
         name: "Azure DevOps",
-        image:"https://149765861.v2.pressablecdn.com/wp-content/uploads/2020/01/devops.png",
+        image: "https://149765861.v2.pressablecdn.com/wp-content/uploads/2020/01/devops.png",
       },
     ],
   },
@@ -101,8 +104,8 @@ export const experiences = [
     role: "System Engineer",
     company: "Infosys Ltd.",
     date: "1st May 2022 - Present",
-    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable & secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.","Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation & testing.", "Implemented JWT mechanism for authentication & authorization.", "Consulted with QA engineers to test specific work items & resolve bugs.", "Mentored team members on assigned tasks & provided constructive feedback resulting in increased team productivity."],
-    skills: ["C#","ASP.NET Core Web API",".NET Framework","Microservices","CQRS","Unit Testing (XUnit)","React JS"],
+    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable & secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.", "Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation & testing.", "Implemented JWT mechanism for authentication & authorization.", "Consulted with QA engineers to test specific work items & resolve bugs.", "Mentored team members on assigned tasks & provided constructive feedback resulting in increased team productivity."],
+    skills: ["C#", "ASP.NET Core Web API", ".NET Framework", "Microservices", "CQRS", "Unit Testing (XUnit)", "React JS"],
   },
   {
     id: 1,
@@ -110,8 +113,8 @@ export const experiences = [
     role: "System Engineer Trainee",
     company: "Infosys Ltd",
     date: "17th February 2022 – 28th April 2022",
-    desc: ["Received training in Java, C#, .NET Core, MySQL & MSSQL.","Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
-    skills: ["Java","C#","ASP.NET Core Web API","MySQL","MSSQL"],
+    desc: ["Received training in Java, C#, .NET Core, MySQL & MSSQL.", "Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
+    skills: ["Java", "C#", "ASP.NET Core Web API", "MySQL", "MSSQL"],
   },
   {
     id: 2,
@@ -119,8 +122,8 @@ export const experiences = [
     role: "Software Support Executive",
     company: "Anant Infomedia Pvt Ltd",
     date: "4th October 2021 - 12th February 2022",
-    desc: ["Contributed to coding, testing & debugging websites of various projects.","Developed new features from scratch by modifying frontend & backend web pages."],
-    skills: ["HTML","CSS","JavaScript","PHP","Angular","CodeIgniter","SQL Server",],
+    desc: ["Contributed to coding, testing & debugging websites of various projects.", "Developed new features from scratch by modifying frontend & backend web pages."],
+    skills: ["HTML", "CSS", "JavaScript", "PHP", "Angular", "CodeIgniter", "SQL Server",],
   },
 ];
 
@@ -155,15 +158,17 @@ export const projects = [
   {
     id: 0,
     title: "News App",
-    description:["This is a News Application which shows Daily news of various categories. Developed Using Function based component"],
-    tags: ["JavaScript", "React JS", "HTML", "CSS", "Style-Components","GitHub"],
+    image: News,
+    description: ["This is a News Application which shows Daily news of various categories. Developed Using Function based component"],
+    tags: ["JavaScript", "React JS", "HTML", "CSS", "Style-Components", "GitHub"],
     github: "https://github.com/Ayush1099/NewsApp",
   },
   {
     id: 1,
     title: "APIs",
-    description:["This is a Backend Application consisting of two APIs of type GET and POST method to create and fetch User Details from DB. Implemented JWT mechanism for Authentication and Authorization. Integrated Swagger for API Documentation and Testing. Implemented validations for Request parameters."],
-    tags: ["JavaScript", "Node JS", "Express JS", "MongoDB","Postman", "Swagger", "GitHub"],
+    image: APIs,
+    description: ["This is a Backend Application consisting of two APIs of type GET and POST method to create and fetch User Details from DB. Implemented JWT mechanism for Authentication and Authorization. Integrated Swagger for API Documentation and Testing. Implemented validations for Request parameters."],
+    tags: ["JavaScript", "Node JS", "Express JS", "MongoDB", "Postman", "Swagger", "GitHub"],
     github: "https://github.com/Ayush1099/APIs",
   },
 ];
