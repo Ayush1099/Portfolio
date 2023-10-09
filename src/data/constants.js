@@ -6,7 +6,7 @@ export const Bio = {
   name: "Ayush Verma",
   roles: "Software Developer",
   description:
-    "I have 2+ years of experience. Experienced in developing scalable & secure Microservices using C# in ASP.NET Core Web API. Skilled in JavaScript & React JS for building responsive Front-end. Excellent analytical, problem-solving skills & commited to delivering high-quality code with a track record of meeting & exceeding project goals. Passion for learning new technologies to improve technical skill set. Always eager to take on new challenges with a positive attitude & a growth mindset.",
+    "I have 2+ years of experience. I specialize in developing scable & secure Microservices using C# in ASP.NET Core Web API. I'm also proficient in JavaScript, React JS, and Express JS for building robust and scalable frontend &  backend systems. Excellent analytical, problem-solving skills and commited to delivering high-quality code, with a track record of meeting & exceeding project goals. I'm passionate about learning new technologies and thrive on tackling new challenges with a positive attitude and a growth mindset.",
   github: "https://github.com/Ayush1099",
   resume: "https://drive.google.com/file/d/1Cfvr6fqGU1poEeJmeHXRHBAbcNRngY2A/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/ayush-verma-110283190/",

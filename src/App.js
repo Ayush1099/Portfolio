@@ -4,7 +4,7 @@ import { darkTheme, Body, Wrapper } from './utils/Themes.js'
 import Navbar from "./components/Navbar/Navbar.js";
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import HeroSection from "./components/HeroSection/Hero.js";
+import About from "./components/About/About.js";
 import Skills from "./components/Skills/Skills.js";
 import Projects from "./components/Projects/Projects.js";
 import Contact from "./components/Contact/Contact.js";
@@ -20,7 +20,7 @@ function App() {
       <Router >
         <Navbar />
         <Body>
-          <HeroSection />
+          <About />
           <Wrapper>
             <Skills />
             <Experience />
