@@ -1,5 +1,6 @@
 import News from "../images/News.jpg"
 import APIs from "../images/APIs.png"
+import PlantStore from "../images/PlantStore.png"
 
 export const Bio = {
   name: "Ayush Verma",
@@ -170,5 +171,13 @@ export const projects = [
     description: ["This is a Backend Application consisting of two APIs of type GET and POST method to create and fetch User Details from DB. Implemented JWT mechanism for Authentication and Authorization. Integrated Swagger for API Documentation and Testing. Implemented validations for Request parameters."],
     tags: ["JavaScript", "Node JS", "Express JS", "MongoDB", "Postman", "Swagger", "GitHub"],
     github: "https://github.com/Ayush1099/APIs",
+  },
+  {
+    id: 2,
+    title: "Plant Store",
+    image: PlantStore,
+    description: ["This is an Plant Store application where the user can perform CRUD operation like Create, Read, Update and Delete Plants. It has a Cart feature using which the user can purchase the plants. The checkout button will give a success message upon successful purchase and reduce the quantity of the plants purchased in the DB."],
+    tags: ["JavaScript", "ASP.NET Core MVC", "C#", "MSSQL", "GitHub"],
+    github: "https://github.com/Ayush1099/PlantStore.git",
   },
 ];
