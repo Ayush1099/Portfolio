@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, SocialButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyle'
-import { DiCssdeck } from 'react-icons/di';
+import { FaRegDotCircle } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -14,7 +14,7 @@ const Navbar = () => {
       <NavbarContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <FaRegDotCircle size="3rem" /> <Span>Portfolio</Span>
           </a>
         </NavLogo>
         <MobileIcon>

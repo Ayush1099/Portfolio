@@ -12,10 +12,9 @@ const About = () => {
             <HeroContainer>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, I am{Bio.name}</Title>
+                        <Title>Hi, I am {Bio.name}</Title>
                         <TextLoop>
-                            I am a
-                            <Span>{Bio.roles}</Span>
+                            I am a<Span>{Bio.roles}</Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
                         <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
