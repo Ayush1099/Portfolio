@@ -176,7 +176,7 @@ export const projects = [
     id: 2,
     title: "Plant Store",
     image: PlantStore,
-    description: ["This is an Plant Store application where the user can perform CRUD operation like Create, Read, Update and Delete Plants. It has a Cart feature using which the user can purchase the plants. The checkout button will give a success message upon successful purchase and reduce the quantity of the plants purchased in the DB."],
+    description: ["This is an Plant Store application where the user can perform CRUD operations like Create, Read, Update and Delete Plants. It has a Cart feature using which the user can purchase the plants."],
     tags: ["JavaScript", "ASP.NET Core MVC", "C#", "MSSQL", "GitHub"],
     github: "https://github.com/Ayush1099/PlantStore.git",
   },
