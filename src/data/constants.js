@@ -1,6 +1,7 @@
 import News from "../images/News.jpg"
 import APIs from "../images/APIs.png"
 import PlantStore from "../images/PlantStore.png"
+import HotelBookingApp from "../images/HotelBookingApp.png";
 
 export const Bio = {
   name: "Ayush Verma",
@@ -179,5 +180,13 @@ export const projects = [
     description: ["This is an Plant Store application where the user can perform CRUD operations like Create, Read, Update and Delete Plants. It has a Cart feature using which the user can purchase the plants."],
     tags: ["JavaScript", "ASP.NET Core MVC", "C#", "MSSQL", "GitHub"],
     github: "https://github.com/Ayush1099/PlantStore.git",
+  },
+  {
+    id: 3,
+    title: "Hotel Booking App",
+    image: HotelBookingApp,
+    description: ["This is a Hotel Booking App where the user can Book Hotels and also Update and Delete the Bookings."],
+    tags: ["JavaScript", "React JS", "Node JS", "Express JS", "MongoDB", "GitHub"],
+    github: "https://github.com/Ayush1099/HotelBookingApp.git",
   },
 ];
