@@ -185,7 +185,7 @@ export const projects = [
     id: 3,
     title: "Hotel Booking App",
     image: HotelBookingApp,
-    description: ["This is a Hotel Booking App where the user can Book Hotels and also Update and Delete the Bookings."],
+    description: ["This is a Hotel Booking App where the user can Book Hotels and also Update and Delete the Bookings. Implemented JWT mechanism for Authentication and Authorization. Implemented Error Handling Middleware."],
     tags: ["JavaScript", "React JS", "Node JS", "Express JS", "MongoDB", "GitHub"],
     github: "https://github.com/Ayush1099/HotelBookingApp.git",
   },
