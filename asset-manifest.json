@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.00729374.css",
-    "main.js": "/Portfolio/static/js/main.c5e140db.js",
+    "main.js": "/Portfolio/static/js/main.cda224de.js",
     "static/media/HotelBookingApp.png": "/Portfolio/static/media/HotelBookingApp.c94c47bd8f1968633056.png",
     "static/media/News.jpg": "/Portfolio/static/media/News.10f23abcff1db73b5f6b.jpg",
     "static/media/MyImage.jpeg": "/Portfolio/static/media/MyImage.bc40c3bd11edb8ccf699.jpeg",
@@ -9,10 +9,10 @@
     "static/media/APIs.png": "/Portfolio/static/media/APIs.1dec5db9fc6f43ea72b5.png",
     "index.html": "/Portfolio/index.html",
     "main.00729374.css.map": "/Portfolio/static/css/main.00729374.css.map",
-    "main.c5e140db.js.map": "/Portfolio/static/js/main.c5e140db.js.map"
+    "main.cda224de.js.map": "/Portfolio/static/js/main.cda224de.js.map"
   },
   "entrypoints": [
     "static/css/main.00729374.css",
-    "static/js/main.c5e140db.js"
+    "static/js/main.cda224de.js"
   ]
 }
