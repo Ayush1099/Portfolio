@@ -106,8 +106,17 @@ export const experiences = [
     role: "System Engineer",
     company: "Infosys Ltd.",
     date: "1st May 2022 - Present",
-    desc: ["Collaborated with cross-functional teams in a fast-paced Agile environment, providing timely user story updates in daily scrum meetings.", "Developed scalable & secure Microservices using C# in ASP.NET Core Web API 6.0, following CQRS design pattern.", "Unit tested Microservices using XUnit, achieving code coverage above 80%.", "Created responsive user interfaces using ReactJS for SPA development.", "Integrated Swagger for API documentation & testing.", "Implemented JWT mechanism for authentication & authorization.", "Consulted with QA engineers to test specific work items & resolve bugs.", "Mentored team members on assigned tasks & provided constructive feedback resulting in increased team productivity."],
-    skills: ["C#", "ASP.NET Core Web API", ".NET Framework", "Microservices", "CQRS", "Unit Testing (XUnit)", "React JS"],
+    desc: ["Collaborated with cross-functional teams in a fast-paced agile environment providing user story updates in daily scrum calls.",
+    "Developed Microservices using C# in ASP.NET Core Web API 6.0 following CQRS design pattern.",
+    "Implemented SOLID Principles using Singleton and Dependency Injection pattern.",
+    "Unit tested Microservices using XUnit, achieving code coverage above 80%.",
+    "Integrated Swagger for API documentation and testing/troubleshooting.",
+    "Worked on migration of MuleSoft Application to .NET Core.",
+    "Implemented JWT mechanism for authentication, authorization and Fluent Validation for request parameters.",
+    "Contributed to the development of an Audit Framework for a specific application, ensuring comprehensive user activity logging and contributing to system accountability.",
+    "Consulted with QA engineers to test specific work items, resolve bugs and address customer’s feedback.",
+    "Mentored team members on processes, application features and provided constructive feedback on PRs resulting in increased team productivity."],
+    skills: ["C#", "ASP.NET Core Web API", ".NET Framework", "Microservices", "CQRS", "Unit Testing (XUnit)"]
   },
   {
     id: 1,
@@ -115,7 +124,7 @@ export const experiences = [
     role: "System Engineer Trainee",
     company: "Infosys Ltd",
     date: "17th February 2022 – 28th April 2022",
-    desc: ["Received training in Java, C#, .NET Core, MySQL & MSSQL.", "Developed Data Access Layer using Entity Framework Core & Web Service Layer using ASP.NET Core Web API for API Development."],
+    desc: ["Received training in Java, C#, .NET Core, MySQL and MS SQL."],
     skills: ["Java", "C#", "ASP.NET Core Web API", "MySQL", "MSSQL"],
   },
   {
