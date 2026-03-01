@@ -9,4 +9,6 @@ public class ContactInfo
     public string Location { get; set; } = "";
     public string? LinkedIn { get; set; }
     public string? GitHub { get; set; }
+    /// <summary>URL path to profile photo, e.g. /images/profile.jpg</summary>
+    public string? ProfileImageUrl { get; set; }
 }

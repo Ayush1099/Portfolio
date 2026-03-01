@@ -2,8 +2,18 @@
 @{
     ViewData["Title"] = "Home";
     var contact = Model?.Contact ?? new Portfolio.Models.ContactInfo();
+    var imageUrl = !string.IsNullOrEmpty(contact.ProfileImageUrl) ? contact.ProfileImageUrl : "/images/profile.jpeg";
+    var initials = contact.Name != null && contact.Name.Length >= 2
+        ? (contact.Name.Split(' ').Length >= 2
+            ? string.Concat(contact.Name.Split(' ')[0][0], contact.Name.Split(' ')[1][0]).ToUpperInvariant()
+            : contact.Name.Length >= 2 ? contact.Name.Substring(0, 2).ToUpperInvariant() : "AV")
+        : "AV";
 }
 <div class="text-center py-5">
+    <div class="profile-photo-wrap rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center bg-secondary text-white fw-bold" style="width: 180px; height: 180px; font-size: 4rem;">
+        <img src="@imageUrl" alt="@contact.Name" class="rounded-circle profile-photo" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; var s=this.nextElementSibling; s.style.display='flex'; s.classList.remove('d-none');" />
+        <span class="profile-initials d-none align-items-center justify-content-center rounded-circle" style="width: 100%; height: 100%;">@initials</span>
+    </div>
     <h1 class="display-4">@contact.Name</h1>
     <p class="lead text-muted">@contact.Title</p>
     <p class="text-muted">@contact.Location</p>
