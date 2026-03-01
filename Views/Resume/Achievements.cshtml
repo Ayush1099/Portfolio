@@ -1,0 +1,12 @@
+@model Portfolio.Models.Resume
+@{
+    ViewData["Title"] = "Achievements";
+    var achievements = Model?.Achievements ?? new List<string>();
+}
+<h2 class="mb-4">Achievements</h2>
+<ul class="list-group">
+    @foreach (var achievement in achievements)
+    {
+        <li class="list-group-item">@achievement</li>
+    }
+</ul>

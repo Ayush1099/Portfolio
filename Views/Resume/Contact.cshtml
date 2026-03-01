@@ -1,0 +1,25 @@
+@model Portfolio.Models.Resume
+@{
+    ViewData["Title"] = "Contact";
+    var contact = Model?.Contact ?? new Portfolio.Models.ContactInfo();
+}
+<h2 class="mb-4">Contact</h2>
+<div class="card">
+    <div class="card-body">
+        <p class="mb-1"><strong>@contact.Name</strong> — @contact.Title</p>
+        <p class="mb-1"><a href="mailto:@contact.Email">@contact.Email</a></p>
+        @foreach (var phone in contact.Phones)
+        {
+            <p class="mb-1">@phone</p>
+        }
+        <p class="mb-1">@contact.Location</p>
+        @if (!string.IsNullOrEmpty(contact.LinkedIn))
+        {
+            <p class="mb-1"><a href="@contact.LinkedIn" target="_blank" rel="noopener">LinkedIn</a></p>
+        }
+        @if (!string.IsNullOrEmpty(contact.GitHub))
+        {
+            <p class="mb-0"><a href="@contact.GitHub" target="_blank" rel="noopener">GitHub</a></p>
+        }
+    </div>
+</div>

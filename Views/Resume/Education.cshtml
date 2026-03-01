@@ -1,0 +1,16 @@
+@model Portfolio.Models.Resume
+@{
+    ViewData["Title"] = "Education";
+    var education = Model?.Education ?? new List<Portfolio.Models.EducationItem>();
+}
+<h2 class="mb-4">Education</h2>
+@foreach (var item in education)
+{
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">@item.Degree</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@item.Institution @(item.Board != null ? " – " + item.Board : "")</h6>
+            <p class="card-text mb-0">@item.Period · @item.Grade</p>
+        </div>
+    </div>
+}

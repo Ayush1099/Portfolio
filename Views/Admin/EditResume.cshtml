@@ -1,0 +1,16 @@
+@model Portfolio.Models.EditResumeViewModel
+@{
+    ViewData["Title"] = "Edit Resume";
+    Layout = "_Layout";
+}
+<h2 class="mb-4">Edit Resume</h2>
+<p class="text-muted">Edit the JSON below and click Save. The structure must match the resume format (Contact, Skills, Experience, Education, Achievements).</p>
+<form asp-action="EditResume" method="post">
+    <div asp-validation-summary="All" class="text-danger mb-2"></div>
+    <div class="mb-3">
+        <label for="ResumeJson" class="form-label">Resume (JSON)</label>
+        <textarea name="ResumeJson" id="ResumeJson" class="form-control font-monospace" rows="24" style="font-size: 0.9rem;">@Model.ResumeJson</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

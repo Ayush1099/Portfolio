@@ -1,0 +1,21 @@
+@model Portfolio.Models.Resume
+@{
+    ViewData["Title"] = "Skills";
+    var skills = Model?.Skills ?? new List<Portfolio.Models.SkillGroup>();
+}
+<h2 class="mb-4">Skills</h2>
+<div class="row">
+    @foreach (var group in skills)
+    {
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <div class="card-header fw-bold">@group.GroupName</div>
+                <div class="card-body">
+                    <p class="card-text mb-0">
+                        @string.Join(", ", group.Items)
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,132 @@
+{
+  "Contact": {
+    "Name": "Ayush Verma",
+    "Title": "Software Developer",
+    "Email": "ayush99verma@gmail.com",
+    "Phones": [ "+91-7972352688", "+91-9421801348" ],
+    "Location": "Goa, India",
+    "LinkedIn": "https://www.linkedin.com/in/ayush-verma-110283190/",
+    "GitHub": "https://github.com/Ayush1099"
+  },
+  "Skills": [
+    {
+      "GroupName": "Object-Oriented Programming Language",
+      "Items": ["C#", "C++"]
+    },
+    {
+      "GroupName": "Web Technologies",
+      "Items": ["HTML", "CSS", "Javascript", "Typescript", "RESTful API"]
+    },
+    {
+      "GroupName": "Frameworks/Libraries",
+      "Items": ["React.js", "Node.js", "Express.js", "ASP.NET Core Web API/MVC", "Angular"]
+    },
+    {
+      "GroupName": "Unit Testing",
+      "Items": ["XUnit", "Jest"]
+    },
+    {
+      "GroupName": "Database",
+      "Items": ["MySQL", "PostgreSQL"]
+    },
+    {
+      "GroupName": "Source Control Tools",
+      "Items": ["GitHub", "Azure DevOps"]
+    },
+    {
+      "GroupName": "ORM",
+      "Items": ["Entity Framework Core"]
+    },
+    {
+      "GroupName": "Other Tools",
+      "Items": ["Docker"]
+    }
+  ],
+  "Experience": [
+    {
+      "Company": "Xeeva India Pvt Ltd (Simfoni)",
+      "Role": "Software Engineer II",
+      "Location": "Bhopal (Remote)",
+      "Period": "May 2024 – Present",
+      "BulletPoints": [
+        "Developed and integrated .NET APIs to support business logic, data integration, and third-party API communication.",
+        "Created user interfaces using Blazor, Angular and Typescript.",
+        "Maintained a strong track record of resolving 25% of support tickets each quarter, ensuring timely resolution.",
+        "Designed and maintained multiple Windows Task Scheduler–based .NET applications for automated background processing and integrations.",
+        "Implemented CI/CD pipelines with GitHub Actions, and independently built Dockerized .NET + Redis applications for containerized local environments.",
+        "Migrated a legacy .NET Framework app to ASP.NET Web API 8.0 and replaced a legacy Excel generation process with OpenXML, reducing file size by 90% and improving processing speed.",
+        "Optimized LINQ queries for data retrieval from databases.",
+        "Reduced generation of support tickets by 10% through automated data sync between applications via ASP.NET Web API 8.0.",
+        "Performed Unit testing of API's using XUnit and Moq, maintaining code coverage above 80%.",
+        "Implemented logging using Serilog to ensure easy error tracking and debugging.",
+        "Conducted comprehensive RCA to identify and resolve critical bugs promptly."
+      ]
+    },
+    {
+      "Company": "Infosys Ltd",
+      "Role": "Systems Engineer",
+      "Location": "Mangalore",
+      "Period": "May 2022 – April 2024 | 2 yrs",
+      "BulletPoints": [
+        "Collaborated with cross-functional teams in a fast-paced agile environment, delivering user story updates during scrum calls.",
+        "Developed Microservices using C# in ASP .NET Core Web API 6.0 following CQRS design pattern and Mediatr.",
+        "Applied SOLID Principles with Scoped and Dependency Injection patterns.",
+        "Implemented Adapter Pattern using AutoMapper for seamless data mapping.",
+        "Applied Repository Pattern for modular and efficient data access.",
+        "Achieved 80%+ code coverage by unit testing microservices with XUnit and Moq.",
+        "Integrated Swagger for API documentation and streamline testing/troubleshooting processes.",
+        "Utilized Fluent Validation for request parameter validation.",
+        "Implemented Single Sign-On (SSO) in React.js using Microsoft Authentication Library (MSAL).",
+        "Unit Tested JavaScript functions and React Components using Jest library, achieving code coverage of 70%.",
+        "Improved UI performance by implementing pagination.",
+        "Consulted with QA engineers to test work items, resolve bugs and address customer's feedback."
+      ]
+    },
+    {
+      "Company": "Infosys Ltd",
+      "Role": "Systems Engineer Trainee",
+      "Location": "Mysore",
+      "Period": "Feb 2022 – April 2022 | 2 months",
+      "BulletPoints": [
+        "Received training in Java, C#, .NET Core, MySQL and MS SQL."
+      ]
+    },
+    {
+      "Company": "Anant Infomedia Pvt Ltd",
+      "Role": "Software Support Executive",
+      "Location": "Goa",
+      "Period": "Oct 2021 – Feb 2022 | 5 months",
+      "BulletPoints": [
+        "Implemented new features from scratch by modifying frontend and backend web pages.",
+        "Utilized technologies such as HTML, CSS, JavaScript, PHP, CodeIgniter and SQL Server."
+      ]
+    }
+  ],
+  "Education": [
+    {
+      "Degree": "Bachelor's Degree in Mechanical Engineering",
+      "Institution": "Padre Conceicao College of Engineering – Goa University",
+      "Board": null,
+      "Period": "2017-2021",
+      "Grade": "Percentage: 70.6 %"
+    },
+    {
+      "Degree": "Higher Secondary",
+      "Institution": "Vidya Vikas Academy",
+      "Board": "CBSE Board",
+      "Period": "2017",
+      "Grade": "Percentage: 72.8 %"
+    },
+    {
+      "Degree": "Senior Secondary",
+      "Institution": "Vidya Vikas Academy",
+      "Board": "CBSE Board",
+      "Period": "2015",
+      "Grade": "CGPA: 8.8"
+    }
+  ],
+  "Achievements": [
+    "Received the Infosys Appreciation Badge for consistent excellence and team contributions.",
+    "Regularly acknowledged in sprint retrospectives for outstanding teamwork and for delivering high-quality project outcomes."
+  ]
+}

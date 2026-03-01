@@ -1,0 +1,39 @@
+@model Portfolio.Models.Resume
+@{
+    ViewData["Title"] = "Home";
+    var contact = Model?.Contact ?? new Portfolio.Models.ContactInfo();
+}
+<div class="text-center py-5">
+    <h1 class="display-4">@contact.Name</h1>
+    <p class="lead text-muted">@contact.Title</p>
+    <p class="text-muted">@contact.Location</p>
+    <p class="mt-3">
+        @if (!string.IsNullOrEmpty(contact.Email))
+        {
+            <a href="mailto:@contact.Email" class="text-decoration-none me-3">@contact.Email</a>
+        }
+        @if (!string.IsNullOrEmpty(contact.LinkedIn))
+        {
+            <a href="@contact.LinkedIn" target="_blank" rel="noopener" class="text-decoration-none me-3">LinkedIn</a>
+        }
+        @if (!string.IsNullOrEmpty(contact.GitHub))
+        {
+            <a href="@contact.GitHub" target="_blank" rel="noopener" class="text-decoration-none">GitHub</a>
+        }
+    </p>
+</div>
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <p class="text-center">
+            Software Developer with 4+ years of experience in .NET, ASP.NET Core, Blazor, and full-stack development.
+            Experienced in building APIs, microservices, and modern web applications.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+            <a asp-controller="Resume" asp-action="Experience" class="btn btn-outline-primary">Experience</a>
+            <a asp-controller="Resume" asp-action="Skills" class="btn btn-outline-primary">Skills</a>
+            <a asp-controller="Resume" asp-action="Education" class="btn btn-outline-primary">Education</a>
+            <a asp-controller="Resume" asp-action="Achievements" class="btn btn-outline-primary">Achievements</a>
+            <a asp-controller="Resume" asp-action="Contact" class="btn btn-outline-primary">Contact</a>
+        </div>
+    </div>
+</div>
