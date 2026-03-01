@@ -34,7 +34,8 @@ public class AdminController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Login(string password, string? returnUrl, CancellationToken cancellationToken)
     {
-        var expectedPassword = _config["Admin:Password"];
+        var expectedPassword = Environment.GetEnvironmentVariable("ADMIN_PASSWORD")
+            ?? _config["Admin:Password"];
         if (string.IsNullOrEmpty(expectedPassword) || password != expectedPassword)
         {
             ModelState.AddModelError(string.Empty, "Invalid password.");

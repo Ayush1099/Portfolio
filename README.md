@@ -18,15 +18,17 @@ Open https://localhost:5001 (or the URL shown in the console).
 
 ## Change admin password
 
-In `appsettings.json`, set:
+Set the `ADMIN_PASSWORD` environment variable (takes precedence), or set `Admin:Password` in `appsettings.json`.
 
-```json
-"Admin": {
-  "Password": "YourSecurePassword"
-}
+**Local (PowerShell):**
+```powershell
+$env:ADMIN_PASSWORD = "YourSecurePassword"
+dotnet run
 ```
 
-**Important**: Do not commit a real password to a public repository. Use User Secrets in development or environment variables in production.
+**Visual Studio:** Project → Properties → Debug → Open debug launch profiles → Add `ADMIN_PASSWORD` under Environment variables.
+
+**Production:** Set `ADMIN_PASSWORD` in your hosting provider's environment/configuration.
 
 ## Update content without admin
 
