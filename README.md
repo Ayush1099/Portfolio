@@ -1,6 +1,6 @@
 # Portfolio - Ayush Verma
 
-ASP.NET Core 8 MVC portfolio site with resume content stored in JSON. Public pages show experience, skills, education, achievements, and contact. An admin area allows editing the resume after logging in with a password.
+Portfolio site with resume content stored in JSON. Public pages show experience, skills, education, achievements, and contact. An admin area allows editing the resume after logging in with a password.
 
 ## Run locally
 
