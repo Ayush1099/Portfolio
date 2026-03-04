@@ -34,6 +34,19 @@ dotnet run
 
 You can edit `Data/resume.json` directly. Restart the app (or redeploy) so changes are loaded. The JSON structure must match the `Resume` model (Contact, Skills, Experience, Education, Achievements).
 
-## Deploy
+## Deploy on Render
 
-The app reads `Data/resume.json` from the content root. Ensure the file is deployed (it is set to `CopyToOutputDirectory: PreserveNewest` in the project file). For production, set a strong admin password via configuration or environment variables.
+1. Push your code to GitHub.
+2. Go to [render.com](https://render.com) → New → Web Service.
+3. Connect your repository and select it.
+4. Use these settings:
+   - **Build Command:** `dotnet publish -c Release -o ./publish`
+   - **Start Command:** `dotnet ./publish/Portfolio.dll`
+5. Add environment variables (Environment tab):
+   - `ASPNETCORE_ENVIRONMENT` = `Production`
+   - `ADMIN_PASSWORD` = your admin password (required)
+6. Deploy. Render will give you a URL (e.g. `https://portfolio-xxx.onrender.com`).
+
+## Deploy (general)
+
+The app reads `Data/resume.json` from the content root. Ensure the file is deployed (it is set to `CopyToOutputDirectory: PreserveNewest` in the project file). For production, set `ADMIN_PASSWORD` as an environment variable.

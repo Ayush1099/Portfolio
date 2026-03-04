@@ -3,19 +3,21 @@
     ViewData["Title"] = "Experience";
     var experience = Model?.Experience ?? new List<Portfolio.Models.ExperienceItem>();
 }
-<h2 class="mb-4">Experience</h2>
-@foreach (var item in experience)
-{
-    <div class="card mb-4">
-        <div class="card-body">
-            <h5 class="card-title">@item.Role at @item.Company</h5>
-            <h6 class="card-subtitle mb-2 text-muted">@item.Location · @item.Period</h6>
-            <ul class="card-text mb-0">
-                @foreach (var bullet in item.BulletPoints)
-                {
-                    <li>@bullet</li>
-                }
-            </ul>
+<div class="container">
+    <h2 class="section-title">Experience</h2>
+    @foreach (var item in experience)
+    {
+        <div class="card card-modern mb-4">
+            <div class="card-body">
+                <h5 class="card-title-modern">@item.Role at @item.Company</h5>
+                <h6 class="card-subtitle-modern">@item.Location · @item.Period</h6>
+                <ul class="list-bullets">
+                    @foreach (var bullet in item.BulletPoints)
+                    {
+                        <li>@bullet</li>
+                    }
+                </ul>
+            </div>
         </div>
-    </div>
-}
+    }
+</div>

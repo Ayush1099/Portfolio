@@ -3,14 +3,20 @@
     ViewData["Title"] = "Edit Resume";
     Layout = "_Layout";
 }
-<h2 class="mb-4">Edit Resume</h2>
-<p class="text-muted">Edit the JSON below and click Save. The structure must match the resume format (Contact, Skills, Experience, Education, Achievements).</p>
-<form asp-action="EditResume" method="post">
-    <div asp-validation-summary="All" class="text-danger mb-2"></div>
-    <div class="mb-3">
-        <label for="ResumeJson" class="form-label">Resume (JSON)</label>
-        <textarea name="ResumeJson" id="ResumeJson" class="form-control font-monospace" rows="24" style="font-size: 0.9rem;">@Model.ResumeJson</textarea>
+<div class="container">
+    <h2 class="section-title">Edit Resume</h2>
+    <p class="text-muted mb-4">Edit the JSON below and click Save. The structure must match the resume format (Contact, Skills, Experience, Education, Achievements).</p>
+    <div class="card card-modern">
+        <div class="card-body">
+            <form asp-action="EditResume" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-2"></div>
+                <div class="mb-3">
+                    <label for="ResumeJson" class="form-label fw-semibold">Resume (JSON)</label>
+<textarea name="ResumeJson" id="ResumeJson" class="form-control font-monospace" rows="20" style="font-size: 0.875rem;">@Html.Raw(Model.ResumeJson)</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-primary-custom">Save</button>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-custom ms-2">Cancel</a>
+            </form>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary">Save</button>
-    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Cancel</a>
-</form>
+</div>

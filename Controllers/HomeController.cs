@@ -24,7 +24,6 @@ public class HomeController : Controller
         return View(resume);
     }
 
-    /// <summary>Serves the profile image from wwwroot/images so it always loads.</summary>
     [ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Client)]
     public IActionResult ProfileImage()
     {

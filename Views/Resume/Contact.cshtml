@@ -3,23 +3,37 @@
     ViewData["Title"] = "Contact";
     var contact = Model?.Contact ?? new Portfolio.Models.ContactInfo();
 }
-<h2 class="mb-4">Contact</h2>
-<div class="card">
-    <div class="card-body">
-        <p class="mb-1"><strong>@contact.Name</strong> — @contact.Title</p>
-        <p class="mb-1"><a href="mailto:@contact.Email">@contact.Email</a></p>
-        @foreach (var phone in contact.Phones)
-        {
-            <p class="mb-1">@phone</p>
-        }
-        <p class="mb-1">@contact.Location</p>
-        @if (!string.IsNullOrEmpty(contact.LinkedIn))
-        {
-            <p class="mb-1"><a href="@contact.LinkedIn" target="_blank" rel="noopener">LinkedIn</a></p>
-        }
-        @if (!string.IsNullOrEmpty(contact.GitHub))
-        {
-            <p class="mb-0"><a href="@contact.GitHub" target="_blank" rel="noopener">GitHub</a></p>
-        }
+<div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="card card-modern">
+        <div class="card-body p-4">
+            <p class="mb-2 fs-5 fw-semibold text-primary">@contact.Name</p>
+            <p class="text-muted mb-3">@contact.Title</p>
+            <p class="mb-2 d-flex align-items-center gap-2">
+                <i class="bi bi-envelope text-muted" style="font-size: 1.1rem;"></i>
+                <a href="mailto:@contact.Email" class="text-decoration-none fw-medium" style="color: var(--accent);">@contact.Email</a>
+            </p>
+            @foreach (var phone in contact.Phones)
+            {
+                <p class="mb-2 d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone text-muted" style="font-size: 1.1rem;"></i>
+                    @phone
+                </p>
+            }
+            <p class="mb-2 d-flex align-items-center gap-2">
+                <i class="bi bi-geo-alt text-muted" style="font-size: 1.1rem;"></i>
+                @contact.Location
+            </p>
+            <div class="d-flex gap-3 mt-3 pt-2 border-top">
+                @if (!string.IsNullOrEmpty(contact.LinkedIn))
+                {
+                    <a href="@contact.LinkedIn" target="_blank" rel="noopener" class="text-decoration-none contact-social-icon" style="color: var(--accent);" aria-label="LinkedIn"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
+                }
+                @if (!string.IsNullOrEmpty(contact.GitHub))
+                {
+                    <a href="@contact.GitHub" target="_blank" rel="noopener" class="text-decoration-none contact-social-icon" style="color: var(--accent);" aria-label="GitHub"><i class="bi bi-github" style="font-size: 1.5rem;"></i></a>
+                }
+            </div>
+        </div>
     </div>
 </div>

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: portfolio
+    runtime: dotnet
+    buildCommand: dotnet publish -c Release -o ./publish
+    startCommand: dotnet ./publish/Portfolio.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production

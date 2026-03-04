@@ -3,10 +3,10 @@
     ViewData["Title"] = "Achievements";
     var achievements = Model?.Achievements ?? new List<string>();
 }
-<h2 class="mb-4">Achievements</h2>
-<ul class="list-group">
+<div class="container">
+    <h2 class="section-title">Achievements</h2>
     @foreach (var achievement in achievements)
     {
-        <li class="list-group-item">@achievement</li>
+        <div class="achievement-item">@achievement</div>
     }
-</ul>
+</div>

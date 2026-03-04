@@ -3,19 +3,22 @@
     ViewData["Title"] = "Skills";
     var skills = Model?.Skills ?? new List<Portfolio.Models.SkillGroup>();
 }
-<h2 class="mb-4">Skills</h2>
-<div class="row">
-    @foreach (var group in skills)
-    {
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100">
-                <div class="card-header fw-bold">@group.GroupName</div>
-                <div class="card-body">
-                    <p class="card-text mb-0">
-                        @string.Join(", ", group.Items)
-                    </p>
+<div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="row">
+        @foreach (var group in skills)
+        {
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card card-modern h-100">
+                    <div class="card-header">@group.GroupName</div>
+                    <div class="card-body">
+                        @foreach (var item in group.Items)
+                        {
+                            <span class="skill-tag">@item</span>
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>
