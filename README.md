@@ -36,16 +36,17 @@ You can edit `Data/resume.json` directly. Restart the app (or redeploy) so chang
 
 ## Deploy on Render
 
+Render does not support .NET natively; the app uses Docker.
+
 1. Push your code to GitHub.
 2. Go to [render.com](https://render.com) → New → Web Service.
 3. Connect your repository and select it.
 4. Use these settings:
-   - **Build Command:** `dotnet publish -c Release -o ./publish`
-   - **Start Command:** `dotnet ./publish/Portfolio.dll`
+   - **Environment:** Docker (Render uses the `Dockerfile` in the repo).
 5. Add environment variables (Environment tab):
    - `ASPNETCORE_ENVIRONMENT` = `Production`
    - `ADMIN_PASSWORD` = your admin password (required)
-6. Deploy. Render will give you a URL (e.g. `https://portfolio-xxx.onrender.com`).
+6. Deploy. Render will build the Docker image and give you a URL (e.g. `https://portfolio-xxx.onrender.com`).
 
 ## Deploy (general)
 
